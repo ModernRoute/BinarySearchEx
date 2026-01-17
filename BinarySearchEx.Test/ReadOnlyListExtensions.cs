@@ -33,6 +33,17 @@
         }
 
         [Test]
+        public void EmptySpanInTheMiddle()
+        {
+           int[] values = [1,2];
+           using (Assert.EnterMultipleScope())
+           {
+                Assert.That(values.BinarySearchFirst(1,0,0), Is.EqualTo(-2)); 
+                Assert.That(values.BinarySearchLast(1,0,0), Is.EqualTo(-2)); 
+           }
+        }
+
+        [Test]
         public void UnsortedArray()
         {
             List<int> array = [];

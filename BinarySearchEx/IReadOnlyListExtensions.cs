@@ -92,7 +92,7 @@ namespace ModernRoute.BinarySearchEx
 
                 if (left > right)
                 {
-                    return ~0;
+                    return ~index;
                 }
 
                 while (right - left > 0)
@@ -166,7 +166,7 @@ namespace ModernRoute.BinarySearchEx
 
                 if (left > right)
                 {
-                    return ~0;
+                    return ~index;
                 }
 
                 while (right - left > 0)

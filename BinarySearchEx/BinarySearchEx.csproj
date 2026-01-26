@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>NuGet.Workflow</PackageId>
+    <PackageId>ModernRoute.BinarySearchEx</PackageId>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/ModernRoute/BinarySearchEx</RepositoryUrl>
   </PropertyGroup>

@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>NuGet.Workflow</PackageId>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/ModernRoute/BinarySearchEx</RepositoryUrl>
+  </PropertyGroup>
+
 </Project>

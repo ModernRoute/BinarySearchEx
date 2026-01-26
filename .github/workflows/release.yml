@@ -26,5 +26,8 @@ jobs:
       run: dotnet pack --configuration Release /p:Version=${VERSION} --no-build --output .
     - name: Push
       run: dotnet nuget push ModernRoute.BinarySearchEx.${VERSION}.nupkg --source https://nuget.pkg.github.com/ModernRoute/index.json --api-key ${GITHUB_TOKEN}
+    - name: Publish NuGet package
+      run: dotnet nuget push ModernRoute.BinarySearchEx.${VERSION}.nupkg --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}

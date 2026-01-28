@@ -198,7 +198,7 @@ namespace ModernRoute.BinarySearchEx
                     return right;
                 }
             }
-            catch (ArgumentException ex) when (!IsCritical(ex))
+            catch (Exception ex) when (!IsCritical(ex))
             {
                 throw new InvalidOperationException("Failed to compare two elements.", ex);
             }
